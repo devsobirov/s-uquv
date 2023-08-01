@@ -1,31 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+$localizedGroup = ['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]];
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group($localizedGroup, function() {
+    Route::view('/', 'homepage');
+    Auth::routes(['register' => false, 'reset' => false, 'verify' => false]);
 });
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::middleware('auth')->group(function () {
-    Route::view('about', 'about')->name('about');
+Route::prefix('home')->middleware('auth')->group(function () {
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
     Route::get('users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
-
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
 });

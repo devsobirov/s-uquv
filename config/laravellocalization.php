@@ -6,6 +6,10 @@ return [
     // These are sorted by the native name, which is the order you might show them in a language selector.
     // Regional languages are sorted by their base language, so "British English" sorts as "English, British"
     'supportedLocales' => [
+        'zh'          => ['name' => 'Chinese (Simplified)',   'script' => 'Hans', 'native' => '简体中文', 'regional' => 'zh_CN'],
+        'ru'          => ['name' => 'Russian',                'script' => 'Cyrl', 'native' => 'Русский', 'regional' => 'ru_RU'],
+        'uz'          => ['name' => 'Uzbek (Latin)',          'script' => 'Latn', 'native' => 'Oʼzbekcha', 'regional' => 'uz_UZ'],
+        'en'          => ['name' => 'English',                'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
         //'ace'         => ['name' => 'Achinese',               'script' => 'Latn', 'native' => 'Aceh', 'regional' => ''],
         //'af'          => ['name' => 'Afrikaans',              'script' => 'Latn', 'native' => 'Afrikaans', 'regional' => 'af_ZA'],
         //'agq'         => ['name' => 'Aghem',                  'script' => 'Latn', 'native' => 'Aghem', 'regional' => ''],
@@ -42,12 +46,11 @@ return [
         //'et'          => ['name' => 'Estonian',               'script' => 'Latn', 'native' => 'eesti', 'regional' => 'et_EE'],
         //'na'          => ['name' => 'Nauru',                  'script' => 'Latn', 'native' => 'Ekakairũ Naoero', 'regional' => ''],
         //'guz'         => ['name' => 'Ekegusii',               'script' => 'Latn', 'native' => 'Ekegusii', 'regional' => ''],
-        'en'          => ['name' => 'English',                'script' => 'Latn', 'native' => 'English', 'regional' => 'en_GB'],
         //'en-AU'       => ['name' => 'Australian English',     'script' => 'Latn', 'native' => 'Australian English', 'regional' => 'en_AU'],
         //'en-GB'       => ['name' => 'British English',        'script' => 'Latn', 'native' => 'British English', 'regional' => 'en_GB'],
         //'en-CA'       => ['name' => 'Canadian English',       'script' => 'Latn', 'native' => 'Canadian English', 'regional' => 'en_CA'],
         //'en-US'       => ['name' => 'U.S. English',           'script' => 'Latn', 'native' => 'U.S. English', 'regional' => 'en_US'],
-        'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
+        //'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
         //'eo'          => ['name' => 'Esperanto',              'script' => 'Latn', 'native' => 'esperanto', 'regional' => ''],
         //'eu'          => ['name' => 'Basque',                 'script' => 'Latn', 'native' => 'euskara', 'regional' => 'eu_ES'],
         //'ewo'         => ['name' => 'Ewondo',                 'script' => 'Latn', 'native' => 'ewondo', 'regional' => ''],
@@ -141,7 +144,6 @@ return [
         //'om'          => ['name' => 'Oromo',                  'script' => 'Latn', 'native' => 'Oromoo', 'regional' => 'om_ET'],
         //'ng'          => ['name' => 'Ndonga',                 'script' => 'Latn', 'native' => 'OshiNdonga', 'regional' => ''],
         //'hz'          => ['name' => 'Herero',                 'script' => 'Latn', 'native' => 'Otjiherero', 'regional' => ''],
-        //'uz-Latn'     => ['name' => 'Uzbek (Latin)',          'script' => 'Latn', 'native' => 'oʼzbekcha', 'regional' => 'uz_UZ'],
         //'nds'         => ['name' => 'Low German',             'script' => 'Latn', 'native' => 'Plattdüütsch', 'regional' => 'nds_DE'],
         //'pl'          => ['name' => 'Polish',                 'script' => 'Latn', 'native' => 'polski', 'regional' => 'pl_PL'],
         //'pt'          => ['name' => 'Portuguese',             'script' => 'Latn', 'native' => 'português', 'regional' => 'pt_PT'],
@@ -222,7 +224,6 @@ return [
         //'mk'          => ['name' => 'Macedonian',             'script' => 'Cyrl', 'native' => 'македонски', 'regional' => 'mk_MK'],
         //'mn'          => ['name' => 'Mongolian (Cyrillic)',   'script' => 'Cyrl', 'native' => 'монгол', 'regional' => 'mn_MN'],
         //'ce'          => ['name' => 'Chechen',                'script' => 'Cyrl', 'native' => 'нохчийн мотт', 'regional' => 'ce_RU'],
-        //'ru'          => ['name' => 'Russian',                'script' => 'Cyrl', 'native' => 'русский', 'regional' => 'ru_RU'],
         //'sah'         => ['name' => 'Yakut',                  'script' => 'Cyrl', 'native' => 'саха тыла', 'regional' => ''],
         //'tt'          => ['name' => 'Tatar',                  'script' => 'Cyrl', 'native' => 'татар теле', 'regional' => 'tt_RU'],
         //'tg'          => ['name' => 'Tajik (Cyrillic)',       'script' => 'Cyrl', 'native' => 'тоҷикӣ', 'regional' => 'tg_TJ'],
@@ -290,7 +291,6 @@ return [
         //'tzm'         => ['name' => 'Central Atlas Tamazight (Tifinagh)','script' => 'Tfng', 'native' => 'ⵜⴰⵎⴰⵣⵉⵖⵜ', 'regional' => ''],
         //'yue'         => ['name' => 'Yue',                    'script' => 'Hant', 'native' => '廣州話', 'regional' => 'yue_HK'],
         //'ja'          => ['name' => 'Japanese',               'script' => 'Jpan', 'native' => '日本語', 'regional' => 'ja_JP'],
-        //'zh'          => ['name' => 'Chinese (Simplified)',   'script' => 'Hans', 'native' => '简体中文', 'regional' => 'zh_CN'],
         //'zh-Hant'     => ['name' => 'Chinese (Traditional)',  'script' => 'Hant', 'native' => '繁體中文', 'regional' => 'zh_CN'],
         //'ii'          => ['name' => 'Sichuan Yi',             'script' => 'Yiii', 'native' => 'ꆈꌠꉙ', 'regional' => ''],
         //'vai'         => ['name' => 'Vai (Vai)',              'script' => 'Vaii', 'native' => 'ꕙꔤ', 'regional' => ''],
@@ -309,7 +309,7 @@ return [
     // again if the session expires.
     //
     // If false, system will take app.php locale attribute
-    'useAcceptLanguageHeader' => true,
+    'useAcceptLanguageHeader' => false,
 
     // If `hideDefaultLocaleInURL` is true, then a url without locale
     // is identical with the same url with default locale.
@@ -331,7 +331,7 @@ return [
     // If you want to display the locales in particular order in the language selector you should write the order here.
     //CAUTION: Please consider using the appropriate locale code otherwise it will not work
     //Example: 'localesOrder' => ['es','en'],
-    'localesOrder' => [],
+    'localesOrder' => ['uz', 'ru', 'en', 'zh'],
 
     //  If you want to use custom lang url segments like 'at' instead of 'de-AT', you can use the mapping to tallow the LanguageNegotiator to assign the descired locales based on HTTP Accept Language Header. For example you want ot use 'at', so map HTTP Accept Language Header 'de-AT' to 'at' (['de-AT' => 'at']).
     'localesMapping' => [],

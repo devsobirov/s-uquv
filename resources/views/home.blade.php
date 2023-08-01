@@ -7,7 +7,7 @@
 @section('content')
     <div class="page-body">
         <div class="container-xl">
-            
+
             <div class="alert alert-success">
                 <div class="alert-title">
                     {{ __('Welcome') }} {{ auth()->user()->name ?? null }}
