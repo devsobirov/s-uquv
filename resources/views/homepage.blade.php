@@ -2,47 +2,31 @@
 
 @section('content')
     <div class="banner-slider banner-slider-overlay slick_slider slick-arrows-style1" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows":true, "autoplay":true, "centerMode":true, "centerPadding":0, "infinite":true, "initialSlide":2, "responsive": [{"breakpoint":870,"settings":{"slidesToShow": 1}} , {"breakpoint":525,"settings":{"slidesToShow": 1}}]}'>
-        <!-- banner-slide -->
-        <div class="banner-slide">
-            <img width="1920" height="966" class="img-fluid" src="{{asset('assets/images/slides/slider-mainbg-011.jpg')}}" alt="slider-image" />
-            <div class="banner-caption">
-                <div class="info">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="banner-text_1 ttm-textcolor-white text-center mt-50 pt-50 res-1199-mt-0 res-1199-pt-0">
-                                    <div class="mt-10 mb-15">
-                                        <h2 class="slideInUp animated"><span class="ttm-textcolor-skincolor">170 </span>dan <br> ortiq yo'nalishlar.</h2>
-                                    </div>
+        @foreach($banners as $banner)
+            <!-- banner-slide -->
+                <div class="banner-slide">
+                    <img width="1920" height="966" class="img-fluid" src="{{asset($banner->image)}}" alt="slider-image" />
+                    <div class="banner-caption">
+                        <div class="info">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="banner-text_1 ttm-textcolor-white text-center mt-50 pt-50 res-1199-mt-0 res-1199-pt-0">
+                                            @if($banner->intro)
+                                                <div class="slideInUp animated text mt-10 res-1199-mt-0">{!! $banner->intro !!}</div>
+                                            @endif
+                                            <div class="mt-10 mb-15">
+                                                <h2 class="slideInUp animated"><span class="ttm-textcolor-skincolor">{!! $banner->title !!}</h2>
+                                            </div>
 
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- banner-slide -->
-        <div class="banner-slide">
-            <img width="1920" height="965" class="img-fluid" src="{{asset('assets/images/slides/slider-mainbg-012.jpg')}}" alt="slider-image" />
-            <div class="banner-caption">
-                <div class="info">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="banner-text_1 ttm-textcolor-white text-center mt-50 pt-50 res-1199-mt-0 res-1199-pt-0">
-                                    <div class="slideInUp animated text mt-10 res-1199-mt-0">SANOAT O'QUV</div>
-                                    <div class="mt-10 mb-15">
-                                        <h2 class="slideInUp animated">  <span class="ttm-textcolor-skincolor"> 10  </span> Yillik Tajriba </h2>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 
     <!--site-main start-->

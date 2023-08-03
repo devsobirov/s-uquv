@@ -5,16 +5,12 @@
         <!-- Page title -->
         <div class="page-header d-print-none">
             <h2 class="page-title">
-                {{ __('Users') }}
+                Foydalanuvchilar
             </h2>
         </div>
     </div>
     <div class="page-body">
         <div class="container-xl">
-
-            <div class="alert alert-info">
-                <div class="alert-title">Sample table page</div>
-            </div>
 
             <div class="card">
                 <div class="table-responsive">

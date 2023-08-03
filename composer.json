@@ -15,7 +15,8 @@
         "mcamara/laravel-localization": "*",
         "opcodesio/log-viewer": "^2.5",
         "spatie/laravel-translatable": "^6.5",
-        "tanmuhittin/laravel-google-translate": "^2.2"
+        "tanmuhittin/laravel-google-translate": "^2.2",
+        "unisharp/laravel-filemanager": "^2.6"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "*",

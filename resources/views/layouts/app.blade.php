@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" x-data="alpineApp">
 
 <head>
     <meta charset="utf-8">
@@ -8,13 +8,14 @@
     <meta name="description" content="">
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
     @vite('resources/sass/app.scss')
 
     <!-- Custom styles for this Page-->
     @yield('custom_styles')
 
 </head>
-<body class="theme-light">
+<body :class="dark ? 'theme-dark' : 'theme-light'">
 <div class="page">
     <div class="sticky-top">
         <header class="navbar navbar-expand-md navbar-light sticky-top d-print-none">
@@ -28,7 +29,12 @@
                     </a>
                 </h1>
                 <div class="navbar-nav flex-row order-md-last">
-
+                    <div class="d-none d-md-flex me-2">
+                        <a x-cloak href="#" @click.prevent="toggleTheme()" class="nav-link px-0" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Enable light mode" :data-bs-original-title="dark ? `Yorug' rejinmi yoqish` : `Qorong'i rejimni yoqish`">
+                            <span x-cloak x-show="!dark"><x-svg.moon></x-svg.moon></span>
+                            <span x-cloak x-show="dark"><x-svg.sun></x-svg.sun></span>
+                        </a>
+                    </div>
                     @auth
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
@@ -38,12 +44,13 @@
                                 </div>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                <a href="{{ route('profile.show') }}" class="dropdown-item">{{ __('Profile') }}</a>
+                                <a href="{{ route('web.home') }}" class="dropdown-item">Saytga o'tish</a>
+                                <a href="{{ route('profile.show') }}" class="dropdown-item">Profil</a>
                                 <div class="dropdown-divider"></div>
                                 <form method="POST" action="{{ route('logout') }}">
                                     @csrf
                                     <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault(); this.closest('form').submit();">
-                                        {{ __('Log Out') }}
+                                        Chiqish
                                     </a>
                                 </form>
                             </div>
@@ -58,7 +65,7 @@
 
     </div>
     <div class="page-wrapper">
-
+        @include('layouts.includes.messages')
         @yield('content')
 
         <footer class="footer footer-transparent d-print-none">
@@ -84,7 +91,7 @@
 
 <!-- Core plugin JavaScript-->
 @vite('resources/js/app.js')
-
+@include('layouts.includes._alpine-init')
 <!-- Page level custom scripts -->
 @yield('custom_scripts')
 

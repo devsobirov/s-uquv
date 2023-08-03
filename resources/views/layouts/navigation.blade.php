@@ -10,67 +10,73 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="5 12 3 12 12 3 21 12 19 12" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
                             </span>
                             <span class="nav-link-title">
-                                {{ __('Dashboard') }}
+                                Bosh panel
                             </span>
                         </a>
                     </li>
 
-                    <li class="nav-item @if(request()->routeIs('users.index')) active @endif">
-                        <a class="nav-link" href="{{ route('users.index') }}" >
-                            <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/file-text -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
-                                </svg>
+                    <li class="nav-item @if(request()->routeIs('banners.*')) active @endif">
+                        <a class="nav-link" href="{{ route('banners.index') }}" >
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                <x-svg.image></x-svg.image>
                             </span>
-                            <span class="nav-link-title">
-                                {{ __('Users') }}
-                            </span>
+                            <span class="nav-link-title">Bannerlar</span>
                         </a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item @if(request()->routeIs('courses.*')) active @endif">
+                        <a class="nav-link" href="{{ route('courses.index') }}" >
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                <x-svg.books></x-svg.books>
+                            </span>
+                            <span class="nav-link-title">Kurslar</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item @if(request()->routeIs('posts.*')) active @endif">
+                        <a class="nav-link" href="{{ route('posts.index') }}" >
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                <x-svg.news></x-svg.news>
+                            </span>
+                            <span class="nav-link-title">Yangiliklar</span>
+                        </a>
+                    </li>
+
+{{--                    <li class="nav-item @if(request()->routeIs('users.index')) active @endif">--}}
+{{--                        <a class="nav-link" href="{{ route('users.index') }}" >--}}
+{{--                            <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/file-text -->--}}
+{{--                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">--}}
+{{--                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>--}}
+{{--                                    <circle cx="9" cy="7" r="4"></circle>--}}
+{{--                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>--}}
+{{--                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>--}}
+{{--                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>--}}
+{{--                                </svg>--}}
+{{--                            </span>--}}
+{{--                            <span class="nav-link-title">--}}
+{{--                                {{ __('Users') }}--}}
+{{--                            </span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+
+                    <li class="nav-item dropdown @if(request()->routeIs('users.*')) active @endif">
                         <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false" >
-                            <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/star -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list-details" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M13 5h8"></path>
-                                    <path d="M13 9h5"></path>
-                                    <path d="M13 15h8"></path>
-                                    <path d="M13 19h5"></path>
-                                    <rect x="3" y="4" width="6" height="6" rx="1"></rect>
-                                    <rect x="3" y="14" width="6" height="6" rx="1"></rect>
-                                </svg>
+                            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                <x-svg.settings></x-svg.settings>
                             </span>
                             <span class="nav-link-title">
-                            Submenus
+                            Sozlamalar
                             </span>
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#" >
-                                Submenu Item #1
+                            <a class="dropdown-item @if(request()->routeIs('users.*')) active @endif" href="{{ route('users.index') }}">
+                                Foydalanuvchilar
                             </a>
-                            <div class="dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false">
-                                    Submenu Item #2
-                                </a>
-                                <div class="dropdown-menu">
-                                  <a href="#" class="dropdown-item">
-                                    Subsubmenu Item #1
-                                  </a>
-                                  <a href="#" class="dropdown-item">
-                                    Subsubmenu Item #2
-                                  </a>
-                                  <a href="#" class="dropdown-item">
-                                    Subsubmenu Item #3
-                                  </a>
-                                </div>
-                              </div>
-                            <a class="dropdown-item" href="#" >
-                                Submenu Item #3
+                            <a class="dropdown-item" href="/translations" target="_blank">
+                                Tarjimalar
+                            </a>
+                            <a class="dropdown-item" href="{{route('log-viewer.index')}}" >
+                                Loglar jurnali
                             </a>
                         </div>
                     </li>

@@ -85,6 +85,8 @@ return [
 
     'locale' => 'uz',
 
+    'defaultLocale' => 'uz',
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
