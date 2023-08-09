@@ -11,6 +11,6 @@ class Post extends Model
     use HasFactory, HasTranslations;
 
     protected $guarded = false;
-
+    protected $casts = ['views' => 'integer'];
     public array $translatable = ['title', 'content', 'excerpt'];
 }

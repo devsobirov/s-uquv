@@ -52,7 +52,7 @@
 <div class="page">
 
 
-    @include('layouts.includes.header')
+    @include('layouts.includes.header-2')
 
     @yield('content')
 

@@ -6,9 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('posts', function (Blueprint $table) {
@@ -18,13 +15,11 @@ return new class extends Migration
             $table->string('image');
             $table->json('excerpt')->nullable();
             $table->json('content')->nullable();
+            $table->integer('views')->nullable()->default(2);
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('posts');

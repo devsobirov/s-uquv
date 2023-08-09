@@ -6,7 +6,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                     <div class="widget widget_text clearfix">
                         <div class="footer-logo">
-                            <img width="128" height="42" id="footer-logo-img" class="img-center lazyload" data-src="images/footer-logo.png" src="images/footer-logo.png" alt="image">
+                            <img width="128" height="42" id="footer-logo-img" class="img-center lazyload" data-src="{{asset('assets/images/footer-logo.png')}}" src="{{asset('assets/images/footer-logo.png')}}" alt="image">
                         </div>
                         <div class="textwidget widget-text">
                             <p class="pb-10 pr-30 res-575-pr-0">O'quv markazimiz 2008 yildan beri o'z faoliyatini olib bormoqda. Shu davr mobaynida 2000 dan ortiq ishsiz odamni kasb egalari bo'lishga yordam berib kelmoqda. </p>

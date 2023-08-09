@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BlogController as Blog;
+use App\Http\Controllers\CourseController as Courses;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\Admin\BannerController;
@@ -14,6 +16,18 @@ $localizedGroup = ['prefix' => LaravelLocalization::setLocale(),'middleware' => 
 
 Route::group($localizedGroup, function() {
     Route::get('/', [WebController::class, 'homepage'])->name('web.home');
+
+    Route::controller(Courses::class)->prefix('courses')->as('web.courses.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/search', 'index')->name('search');
+        Route::get('/{course}', 'show')->name('show');
+    });
+
+    Route::controller(Blog::class)->prefix('blog')->as('web.blog.')->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/{post}', 'show')->name('show');
+    });
+
     Auth::routes(['register' => false, 'reset' => false, 'verify' => false]);
 });
 

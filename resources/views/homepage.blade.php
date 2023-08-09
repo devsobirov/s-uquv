@@ -5,7 +5,7 @@
         @foreach($banners as $banner)
             <!-- banner-slide -->
                 <div class="banner-slide">
-                    <img width="1920" height="966" class="img-fluid" src="{{asset($banner->image)}}" alt="slider-image" />
+                    <img width="1920" height="500" class="img-fluid" src="{{asset($banner->image)}}" alt="slider-image" />
                     <div class="banner-caption">
                         <div class="info">
                             <div class="container">
@@ -449,7 +449,7 @@
                                     <!--featured-icon-box-->
                                     <div class="featured-icon-box icon-align-before-content style8">
                                         <div class="featured-icon">
-                                            <img width="206" height="176" class="img-fluid lazyloaded" data-src="images/single-img-02.png" alt="image" src="images/single-img-02.png">
+                                            <img width="206" height="176" class="img-fluid lazyloaded" data-src="{{asset('assets/images/single-img-02.png')}}" alt="image" src="{{asset('assets/images/single-img-02.png')}}">
                                         </div>
                                         <div class="featured-content">
                                             <div class="featured-title">
@@ -479,7 +479,7 @@
                         <div class="section-title title-style-center_text">
                             <div class="title-header">
                                 <h5>Mutaxassisliklar</h5>
-                                <h2 class="title"><a href="#">Barcha yo'nalishlar bilan tanishish</a></h2>
+                                <h2 class="title"><a href="{{route('web.courses.index')}}">Barcha yo'nalishlar bilan tanishish</a></h2>
                             </div>
                             <div class="heading-seperator"><span></span></div>
                         </div>
@@ -488,6 +488,12 @@
                 </div>
                 <!-- row end -->
                 <!-- slick_slider -->
+                <div class="row slick_slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "arrows":false, "autoplay":true, "centerMode":true, "centerPadding":0, "infinite":true, "initialSlide":2, "responsive": [{"breakpoint":1100,"settings":{"slidesToShow": 3}} , {"breakpoint":777,"settings":{"slidesToShow": 2}},
+                    {"breakpoint":590,"settings":{"slidesToShow": 1}}]}'>
+                    @foreach($courses as $course)
+                        @include('partials.course-item', ['item' => $course])
+                    @endforeach
+                </div>
 
             </div>
         </section>
@@ -525,7 +531,7 @@
                         <div class="section-title title-style-center_text">
                             <div class="title-header">
                                 <h5>Yangiliklar</h5>
-                                <h2 class="title">So'ngi yangiliklar</h2>
+                                <h2 class="title"><a href="{{route('web.blog.index')}}">So'ngi yangiliklar</a></h2>
                             </div>
                             <div class="heading-seperator"><span></span></div>
                         </div>
@@ -536,156 +542,9 @@
                 <!-- slick_slider -->
                 <div class="row slick_slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "arrows":false, "autoplay":true, "centerMode":true, "centerPadding":0, "infinite":true, "initialSlide":2, "responsive": [{"breakpoint":1100,"settings":{"slidesToShow": 3}} , {"breakpoint":777,"settings":{"slidesToShow": 2}},
                     {"breakpoint":590,"settings":{"slidesToShow": 1}}]}'>
-                    <div class="ttm-box-col-wrapper col-lg-4">
-                        <!-- featured-imagebox-course -->
-                        <div class="featured-imagebox featured-imagebox-course style1">
-                            <div class="ttm-post-thumbnail featured-thumbnail">
-                                <img width="526" height="470" class="img-fluid lazyload" src="images/course/course-one-526x470.jpg" data-src="images/course/course-one-526x470.jpg" alt="image">
-                                <div class="ttm-box-post-date">
-                                        <span class="ttm-entry-date">
-                                            <time class="entry-date" datetime="2019-08-12T08:47:17+00:00">09 May 2023</time>
-                                        </span>
-                                </div>
-                            </div>
-                            <div class="featured-content featured-content-post">
-
-                                <div class="featured-content-post-inner">
-
-                                    <div class="post-title featured-title">
-                                        <h5><a href="#">Geotexnologik quduqlar operatori</a></h5>
-                                        <p>"SANOAT O'QUV" NTM da "Geotexnologik quduqlar operatori" yo'nalishi bo'yicha o'qish boshlandi.</p>
-                                    </div>
-                                </div>
-                                <div class="ttm-course-box-meta">
-                                    <div class="ttm-enrolled">
-                                        <span class="ttm-count ttm-meta-line"><i class="fa fa-user" aria-hidden="true"></i>120</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- featured-imagebox-course end-->
-                    </div>
-                    <div class="ttm-box-col-wrapper col-lg-4">
-                        <!-- featured-imagebox-course -->
-                        <div class="featured-imagebox featured-imagebox-course style1">
-                            <div class="ttm-post-thumbnail featured-thumbnail">
-                                <img width="526" height="470" class="img-fluid lazyload" src="images/course/course-one-526x470.jpg" data-src="images/course/course-one-526x470.jpg" alt="image">
-                                <div class="ttm-box-post-date">
-                                        <span class="ttm-entry-date">
-                                            <time class="entry-date" datetime="2019-08-12T08:47:17+00:00">09 May 2023</time>
-                                        </span>
-                                </div>
-                            </div>
-                            <div class="featured-content featured-content-post">
-
-                                <div class="featured-content-post-inner">
-
-                                    <div class="post-title featured-title">
-                                        <h5><a href="#">Geotexnologik quduqlar operatori</a></h5>
-                                        <p>"SANOAT O'QUV" NTM da "Geotexnologik quduqlar operatori" yo'nalishi bo'yicha o'qish boshlandi.</p>
-                                    </div>
-                                </div>
-                                <div class="ttm-course-box-meta">
-                                    <div class="ttm-enrolled">
-                                        <span class="ttm-count ttm-meta-line"><i class="fa fa-user" aria-hidden="true"></i>120</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- featured-imagebox-course end-->
-                    </div>
-                    <div class="ttm-box-col-wrapper col-lg-4">
-                        <!-- featured-imagebox-course -->
-                        <div class="featured-imagebox featured-imagebox-course style1">
-                            <div class="ttm-post-thumbnail featured-thumbnail">
-                                <img width="526" height="470" class="img-fluid lazyload" src="images/course/course-one-526x470.jpg" data-src="images/course/course-one-526x470.jpg" alt="image">
-                                <div class="ttm-box-post-date">
-                                        <span class="ttm-entry-date">
-                                            <time class="entry-date" datetime="2019-08-12T08:47:17+00:00">09 May 2023</time>
-                                        </span>
-                                </div>
-                            </div>
-                            <div class="featured-content featured-content-post">
-
-                                <div class="featured-content-post-inner">
-
-                                    <div class="post-title featured-title">
-                                        <h5><a href="#">Geotexnologik quduqlar operatori</a></h5>
-                                        <p>"SANOAT O'QUV" NTM da "Geotexnologik quduqlar operatori" yo'nalishi bo'yicha o'qish boshlandi.</p>
-                                    </div>
-                                </div>
-                                <div class="ttm-course-box-meta">
-                                    <div class="ttm-enrolled">
-                                        <span class="ttm-count ttm-meta-line"><i class="fa fa-user" aria-hidden="true"></i>120</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- featured-imagebox-course end-->
-                    </div>
-                    <div class="ttm-box-col-wrapper col-lg-4">
-                        <!-- featured-imagebox-course -->
-                        <div class="featured-imagebox featured-imagebox-course style1">
-                            <div class="ttm-post-thumbnail featured-thumbnail">
-                                <img width="526" height="470" class="img-fluid lazyload" src="images/course/course-one-526x470.jpg" data-src="images/course/course-one-526x470.jpg" alt="image">
-                                <div class="ttm-box-post-date">
-                                        <span class="ttm-entry-date">
-                                            <time class="entry-date" datetime="2019-08-12T08:47:17+00:00">09 May 2023</time>
-                                        </span>
-                                </div>
-                            </div>
-                            <div class="featured-content featured-content-post">
-
-                                <div class="featured-content-post-inner">
-
-                                    <div class="post-title featured-title">
-                                        <h5><a href="#">Geotexnologik quduqlar operatori</a></h5>
-                                        <p>"SANOAT O'QUV" NTM da "Geotexnologik quduqlar operatori" yo'nalishi bo'yicha o'qish boshlandi.</p>
-                                    </div>
-                                </div>
-                                <div class="ttm-course-box-meta">
-                                    <div class="ttm-enrolled">
-                                        <span class="ttm-count ttm-meta-line"><i class="fa fa-user" aria-hidden="true"></i>120</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- featured-imagebox-course end-->
-                    </div>
-                    <div class="ttm-box-col-wrapper col-lg-4">
-                        <!-- featured-imagebox-course -->
-                        <div class="featured-imagebox featured-imagebox-course style1">
-                            <div class="ttm-post-thumbnail featured-thumbnail">
-                                <img width="526" height="470" class="img-fluid lazyload" src="images/course/course-one-526x470.jpg" data-src="images/course/course-one-526x470.jpg" alt="image">
-                                <div class="ttm-box-post-date">
-                                        <span class="ttm-entry-date">
-                                            <time class="entry-date" datetime="2019-08-12T08:47:17+00:00">09 May 2023</time>
-                                        </span>
-                                </div>
-                            </div>
-                            <div class="featured-content featured-content-post">
-
-                                <div class="featured-content-post-inner">
-
-                                    <div class="post-title featured-title">
-                                        <h5><a href="#">Geotexnologik quduqlar operatori</a></h5>
-                                        <p>"SANOAT O'QUV" NTM da "Geotexnologik quduqlar operatori" yo'nalishi bo'yicha o'qish boshlandi.</p>
-                                    </div>
-                                </div>
-                                <div class="ttm-course-box-meta">
-                                    <div class="ttm-enrolled">
-                                        <span class="ttm-count ttm-meta-line"><i class="fa fa-user" aria-hidden="true"></i>120</span>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- featured-imagebox-course end-->
-                    </div>
+                    @foreach($posts as $post)
+                        @include('partials.post-item', ['item' => $post])
+                    @endforeach
                 </div>
             </div>
         </section>
