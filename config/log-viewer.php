@@ -46,9 +46,9 @@ return [
     |
     */
 
-    'back_to_system_url' => config('app.url', null),
+    'back_to_system_url' => '/home',//config('app.url', null),
 
-    'back_to_system_label' => null, // Displayed by default: "Back to {{ app.name }}"
+    'back_to_system_label' => "Bosh panelga qaytish", // Displayed by default: "Back to {{ app.name }}"
 
     /*
     |--------------------------------------------------------------------------
@@ -70,7 +70,7 @@ return [
     */
 
     'middleware' => [
-        'auth',
+        'web','auth',
         \Opcodes\LogViewer\Http\Middleware\AuthorizeLogViewer::class,
     ],
 

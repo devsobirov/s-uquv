@@ -5,7 +5,7 @@
         @csrf
 
         <div class="card-body">
-            <h2 class="card-title text-center mb-4">{{ __('Login to your account') }}</h2>
+            <h2 class="card-title text-center mb-4">Tizimga kirish</h2>
 
             <div class="mb-3">
                 <label class="form-label">{{ __('Email address') }}</label>
@@ -33,12 +33,12 @@
             <div>
                 <label class="form-check">
                     <input type="checkbox" class="form-check-input" tabindex="3" name="remember" />
-                    <span class="form-check-label">{{ __('Remember me on this device') }}</span>
+                    <span class="form-check-label">Ushbu qurilmada eslab qolish</span>
                 </label>
             </div>
 
             <div class="form-footer">
-                <button type="submit" class="btn btn-primary w-100" tabindex="4">{{ __('Sign in') }}</button>
+                <button type="submit" class="btn btn-primary w-100" tabindex="4">Kirish</button>
             </div>
         </div>
     </form>

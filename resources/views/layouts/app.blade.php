@@ -15,7 +15,7 @@
     @yield('custom_styles')
 
 </head>
-<body :class="dark ? 'theme-dark' : 'theme-light'">
+<body :class="dark ? 'theme-dark' : 'theme-light'" :data-bs-theme="dark ? 'dark' : 'light'">
 <div class="page">
     <div class="sticky-top">
         <header class="navbar navbar-expand-md navbar-light sticky-top d-print-none">

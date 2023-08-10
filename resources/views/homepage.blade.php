@@ -497,26 +497,106 @@
 
             </div>
         </section>
-        <section class="ttm-row action2-section ttm-bgcolor-darkgrey bg-img7 ttm-bg ttm-bgimage-yes clearfix">
-            <div class="ttm-row-wrapper-bg-layer ttm-bg-layer"></div>
-            <div class="container"><!--container-->
-                <div class="row"><!--row-->
-                    <div class="col-lg-9 m-auto">
-                        <div class="row-title text-center mt_5">
-                            <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-xl">
-                                <h1>?</h1>
+
+        <section id="feedback-form" class="ttm-row skill-section_2 bg-img14 ttm-bgcolor-skincolor clearfix mb-50">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="border-18px-solid white-border ttm-bgcolor-grey spacing-14">
+                            <div class="ttm-bgcolor-darkgrey">
+                                <!-- section-title -->
+                                <div class="section-title">
+                                    <div class="title-header pt-33 pl-35">
+                                        <h2 class="title">Ariza qoldiring</h2>
+                                    </div>
+                                    <div class="seperator-angle ttm-textcolor-darkgrey"></div>
+                                </div><!-- section-title end -->
                             </div>
-                            <!-- section title -->
-                            <div class="section-title mb-5">
-                                <div class="title-header ttm-textcolor-white">
-                                    <h5>Tanlovda qiynalyapsizmi?</h5>
-                                    <h2 class="title">Ariza qoldiring tanlovda <br> <span class="ttm-textcolor-skincolor">yordamlashamiz</span></h2>
-                                </div>
-                            </div><!-- section title end -->
-                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-white" href="#">Ariza qoldirish</a>
+                            <form action="#" class="ttm-contact_form wrap-form  spacing-13" method="post">
+                                <label>
+                                    <span class="text-input"><input name="name" type="text" value="" placeholder="Name*" required="required"></span>
+                                </label>
+                                <label>
+                                    <span class="text-input"><input name="address" type="text" value="" placeholder="Email*" required="required"></span>
+                                </label>
+                                <label>
+                                    <span class="text-input"><input name="phone" type="text" value="" placeholder="Choose Subject*" required="required"></span>
+                                </label>
+                                <label>
+                                    <span class="text-input"><textarea name="message" rows="3" placeholder="Message*" required="required"></textarea></span>
+                                </label>
+                                <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-dark mt-8" type="submit">Submit Now!</button>
+                            </form>
                         </div>
                     </div>
-                </div>
+                    <div class="col-lg-6">
+                        <div class="spacing-15">
+                            <!-- section title -->
+                            <div class="section-title pr-50 res-991-pr-0">
+                                <div class="title-header">
+                                    <h5>Tanlovda qiynalyapsizmi?</h5>
+                                    <h2 class="title">tanlovda yordamlashamiz</h2>
+                                </div>
+                                <div class="heading-seperator"><span></span></div>
+                            </div><!-- section title end -->
+                            <p>Working collaboratively to ensure every student achieves academically, socially, and emotionally. Centers for excellence in each departments.</p>
+                            <div class="mt-40 mb-30">
+                                <span class="ttm-horizontal_sep"></span>
+                            </div>
+                            <div class="row ttm-vertical_sep">
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <!-- ttm-fid -->
+                                    <div class="ttm-fid inside ttm-fid-with-icon text-center">
+                                        <div class="ttm-fid-icon-wrapper">
+                                            <i class="flaticon-university-1"></i>
+                                        </div>
+                                        <div class="ttm-fid-contents">
+                                            <h4 class="ttm-fid-inner">
+                                                <span data-appear-animation="animateDigits" data-from="0" data-to="170" data-interval="5" data-before="" data-before-style="sup" data-after="" data-after-style="sub" class="numinate"></span>
+                                                <sub>+</sub>
+                                            </h4>
+                                            <h3 class="ttm-fid-title">Yo'nalishlar</h3>
+                                        </div>
+                                    </div><!-- ttm-fid end -->
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <!-- ttm-fid -->
+                                    <div class="ttm-fid inside ttm-fid-with-icon text-center">
+                                        <div class="ttm-fid-icon-wrapper">
+                                            <i class="flaticon-classroom"></i>
+                                        </div>
+                                        <div class="ttm-fid-contents">
+                                            <h4 class="ttm-fid-inner">
+
+                                                <span data-appear-animation="animateDigits" data-from="0" data-to="20" data-interval="1" data-before="" data-before-style="sup" data-after="" data-after-style="sub" class="numinate">20
+                                                        </span>
+                                                <sub>+</sub>
+                                            </h4>
+                                            <h3 class="ttm-fid-title">Mutahassisslar</h3>
+                                        </div>
+                                    </div><!-- ttm-fid end -->
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <!-- ttm-fid -->
+                                    <div class="ttm-fid inside ttm-fid-with-icon text-center">
+                                        <div class="ttm-fid-icon-wrapper">
+                                            <i class="flaticon-school-3"></i>
+                                        </div>
+                                        <div class="ttm-fid-contents">
+                                            <h4 class="ttm-fid-inner">
+                                                 <span data-appear-animation="animateDigits" data-from="0" data-to="2145" data-interval="15" data-before="" data-before-style="sup" data-after="" data-after-style="sub" class="numinate">2145
+                                                        </span>
+                                                <sub>+</sub>
+                                            </h4>
+                                            <h3 class="ttm-fid-title">Bitiruvchilar</h3>
+                                        </div>
+                                    </div><!-- ttm-fid end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- row end -->
             </div>
         </section>
         <!--testimonial-section_2-->
@@ -548,32 +628,6 @@
                 </div>
             </div>
         </section>
-        <!--course-section_1-->
-        <section class="ttm-row action-section ttm-bgcolor-skincolor bg-img5 ttm-bg ttm-bgimage-yes clearfix">
-            <div class="ttm-row-wrapper-bg-layer ttm-bg-layer"></div>
-            <div class="container"><!--container-->
-                <div class="row"><!--row-->
-                    <div class="col-lg-9 m-auto">
-                        <div class="row-title text-center">
-
-                            <!-- section title -->
-                            <div class="section-title mb-10">
-
-                            </div><!-- section title end -->
-                            <a class="ttm-btn ttm-btn-size-lg ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-white" href="#">O'qish uchun ariza qoldirish</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-
-
-
     </div>
     <!--site-main end-->
 @endsection
