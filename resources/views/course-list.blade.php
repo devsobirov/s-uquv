@@ -7,14 +7,14 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <div class="page-title-heading">
-                            <h2 class="title">Barcha o'quv kurslari</h2>
+                            <h2 class="title">@lang('main.homepage_all_course')</h2>
                         </div>
                         <div class="breadcrumb-wrapper">
                                 <span>
                                     <a title="Homepage" href="{{route('home')}}">Home</a>
                                 </span>
                             <span class="ttm-bread-sep">&nbsp;&gt;&nbsp;</span>
-                            <span class="current">Barcha o'quv kurslari</span>
+                            <span class="current">@lang('main.homepage_all_course')</span>
                         </div>
                     </div>
                 </div>

@@ -17,7 +17,7 @@
 {{--               <span class="ttm-count ttm-meta-line"><i class="fa fa-user" aria-hidden="true"></i>120</span>--}}
 {{--               <span class="ttm-comments ttm-meta-line"><i class="fa fa-comment-o"></i>04</span>--}}
                 </div>
-                <a href="{{route('web.courses.show', $item->id)}}" class="ttm-lp-price"><ins>Batafsil</ins></a>
+                <a href="{{route('web.courses.show', $item->id)}}" class="ttm-lp-price"><ins>@lang('main.homepage_detail')</ins></a>
             </div>
         </div>
     </div>

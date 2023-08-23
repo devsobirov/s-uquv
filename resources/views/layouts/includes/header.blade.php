@@ -65,18 +65,18 @@
                                 <a href="#" class="mega-menu-link"><i class="fa fa-home"></i></a>
 
                             </li>
-                            <li><a href="#">Biz haqimizda</a></li>
-                            <li><a href="#">Kasbga o'qitiladigan yo'nalishlar</a></li>
-                            <li><a href="#">Kerakli Hujjatlar</a></li>
-                            <li><a href="">Foto va video galeriya</a></li>
-                            <li><a href="#">Yangiliklar</a></li>
+                            <li><a href="#">@lang('main.about')</a></li>
+                            <li><a href="#">@lang('main.nav_courses')</a></li>
+                            <li><a href="#">@lang('main.nav_docs')</a></li>
+                            <li><a href="">@lang('main.nav_gallery')</a></li>
+                            <li><a href="#">@lang('main.nav_news')</a></li>
 
                         </ul>
                     </nav>
                     <div class="header_extra d-flex flex-row align-items-center ml-auto">
 
                         <div class="header_btn">
-                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-white" href="#">Aloqa</a>
+                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-white" href="#">@lang('main.header_contact')</a>
                         </div>
                     </div>
                 </div>

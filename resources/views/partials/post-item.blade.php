@@ -22,7 +22,7 @@
                 <div class="ttm-enrolled">
                     <span class="ttm-count ttm-meta-line"><i class="fa fa-eye" aria-hidden="true"></i>{{$item->views}}</span>
                 </div>
-                <a href="{{route('web.blog.show', $item->id)}}" class="ttm-lp-price"><ins>Batafsil</ins></a>
+                <a href="{{route('web.blog.show', $item->id)}}" class="ttm-lp-price"><ins>@lang('main.homepage_detail')</ins></a>
             </div>
         </div>
     </div>

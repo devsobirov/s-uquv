@@ -7,14 +7,14 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <div class="page-title-heading">
-                            <h2 class="title">Barcha yangiliklar</h2>
+                            <h2 class="title">@lang('main.homepage_all_news')</h2>
                         </div>
                         <div class="breadcrumb-wrapper">
                                 <span>
-                                    <a title="Bosh sahifa" href="{{route('home')}}">Bosh sahifa</a>
+                                    <a title="Bosh sahifa" href="{{route('home')}}">@lang('main.footer_home')</a>
                                 </span>
                             <span class="ttm-bread-sep">&nbsp;&gt;&nbsp;</span>
-                            <span class="current">Barcha yangiliklar</span>
+                            <span class="current">@lang('main.homepage_all_news')</span>
                         </div>
                     </div>
                 </div>

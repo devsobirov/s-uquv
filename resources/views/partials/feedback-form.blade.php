@@ -7,7 +7,7 @@
                         <!-- section-title -->
                         <div class="section-title">
                             <div class="title-header pt-33 pl-35">
-                                <h2 class="title">Murojat qoldirish</h2>
+                                <h2 class="title">@lang('main.homepage_submit_application')</h2>
                             </div>
                             <div class="seperator-angle ttm-textcolor-darkgrey"></div>
                         </div><!-- section-title end -->

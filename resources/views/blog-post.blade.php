@@ -11,11 +11,11 @@
                         </div>
                         <div class="breadcrumb-wrapper">
                             <span>
-                                <a title="Bosh sahifa" href="{{route('home')}}">Bosh sahifa</a>
+                                <a title="Bosh sahifa" href="{{route('home')}}">@lang('main.footer_home')</a>
                             </span>
                             <span class="ttm-bread-sep">&nbsp;&gt;&nbsp;</span>
                             <span>
-                                <a title="Barcha yangiliklar" href="{{route('web.blog.index')}}">Barcha yangiliklar</a>
+                                <a title="Barcha yangiliklar" href="{{route('web.blog.index')}}">@lang('main.homepage_all_news')</a>
                             </span>
                             <span class="ttm-bread-sep">&nbsp;&gt;&nbsp;</span>
                             <span class="current">{{$post->title}}</span>

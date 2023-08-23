@@ -53,7 +53,7 @@
                                                         <span data-appear-animation="animateDigits" data-from="0" data-to="10" data-interval="1" data-before="" data-before-style="sup" data-after="" data-after-style="sub" class="numinate">10
                                                         </span>
                                                 </h4>
-                                                <h3 class="ttm-fid-title">Yillik tajriba</h3>
+                                                <h3 class="ttm-fid-title">@lang('main.homepage_experience')</h3>
                                             </div>
                                         </div>
                                         <!-- ttm-fid end -->
@@ -66,7 +66,7 @@
                                                         <span data-appear-animation="animateDigits" data-from="0" data-to="20" data-interval="1" data-before="" data-before-style="sup" data-after="" data-after-style="sub" class="numinate">20
                                                         </span>
                                                 </h4>
-                                                <h3 class="ttm-fid-title">Malakali mutaxassislar</h3>
+                                                <h3 class="ttm-fid-title">@lang('main.homepage_specialists')</h3>
                                             </div>
                                         </div>
                                         <!-- ttm-fid end -->
@@ -79,7 +79,7 @@
                                                         <span data-appear-animation="animateDigits" data-from="0" data-to="170" data-interval="5" data-before="" data-before-style="sup" data-after="" data-after-style="sub" class="numinate">170
                                                         </span>
                                                 </h4>
-                                                <h3 class="ttm-fid-title">dan ortiq yo'nalishlar</h3>
+                                                <h3 class="ttm-fid-title">@lang('main.homepage_courses')</h3>
                                             </div>
                                         </div>
                                         <!-- ttm-fid end -->
@@ -92,7 +92,7 @@
                                                         <span data-appear-animation="animateDigits" data-from="0" data-to="2145" data-interval="15" data-before="" data-before-style="sup" data-after="" data-after-style="sub" class="numinate">2145
                                                         </span>
                                                 </h4>
-                                                <h3 class="ttm-fid-title">bitiruvchilar</h3>
+                                                <h3 class="ttm-fid-title">@lang('main.homepage_graduates')</h3>
                                             </div>
                                         </div>
                                         <!-- ttm-fid end -->
@@ -117,7 +117,7 @@
                             <!-- section title -->
                             <div class="section-title">
                                 <div class="title-header">
-                                    <h5>Biz haqimizda</h5>
+                                    <h5>@lang('main.about')</h5>
                                     <h2 class="title">Sanoat o'quv </h2>
                                 </div>
                                 <div class="heading-seperator"><span></span></div>
@@ -130,13 +130,13 @@
                                             <span data-appear-animation="animateDigits" data-from="0" data-to="10" data-interval="1" data-before="" data-before-style="sup" data-after="" data-after-style="sub" class="numinate">10
                                             </span>
                                     </h4>
-                                    <h3 class="ttm-fid-title">Yillik <br> Tajriba</h3>
+                                    <h3 class="ttm-fid-title">@lang('main.homepage_years') <br> @lang('main.homepage_years_experience')</h3>
                                 </div>
                             </div>
                             <!-- ttm-fid end -->
-                            <p>‌O’quv markazimiz 2008 yildan beri o’z faoliyatini olib bormoqda. Shu davr mobaynida 2000 dan ortiq ishsiz odamni kasb egalari bo’lishiga yordam berib kelgan.</p>
-                            <p>Hozirgi kunda ishsizlik muammosi globallashib borayotgan davrda, bizning o'quv markazimizdan ishonchli kasb egasi bo'lish ehtimoli juda yuqori. </p>
-                            <p>Markazimiz bilan nafaqat O'zbekiston kompaniyalari, balkim xorijiy korxonalarning ham shartnomalari mavjud.</p>
+                            <p>‌@lang('main.footer_text')</p>
+                            <p>@lang('main.homepage_text1') </p>
+                            <p>@lang('main.homepage_text2')</p>
                         </div>
 
                     </div>
@@ -153,7 +153,7 @@
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h5>Kasb mutaxassisi sifatidagi sertifikatlar beriladi</h5>
+                                        <h5>@lang('main.homepage_certificat')</h5>
                                     </div>
                                 </div>
                             </div>
@@ -173,8 +173,8 @@
                 <!-- section title -->
                 <div class="section-title title-style-center_text">
                     <div class="title-header">
-                        <h5>Hamkorlar</h5>
-                        <h2 class="title">Hamkor kompaniyalar ro'yhati</h2>
+                        <h5>@lang('main.homepage_partners')</h5>
+                        <h2 class="title">@lang('main.homepage_list_companies')</h2>
                     </div>
                     <div class="heading-seperator"><span></span></div>
                 </div>
@@ -303,9 +303,9 @@
                         <div class="section-title style1 clearfix">
                             <div class="title-header">
                                 <h5>Sanoat O'quv</h5>
-                                <h2 class="title">Nima uchun Biz?</h2>
+                                <h2 class="title">@lang('main.homepage_why_us')</h2>
                             </div>
-                            <div class="title-desc">Siz o'zingiz xohlagan kasb egasi bo'lishingizda bizning professional o'qituvchilarimiz sizga o'z bilimlari va malakalarini berishadi</div>
+                            <div class="title-desc">@lang('main.homepage_prof')</div>
                         </div>
                         <!-- section-title end -->
                     </div>
@@ -323,10 +323,10 @@
                             </div>
                             <div class="featured-content">
                                 <div class="featured-title">
-                                    <h5>Mutaxassislar</h5>
+                                    <h5>@lang('main.homepage_specialists_1')</h5>
                                 </div>
                                 <div class="featured-desc">
-                                    <p>Darslar o'z sohasining professional mutaxassislari tomonidan olib boriladi</p>
+                                    <p>@lang('main.homepage_black_text1')</p>
                                 </div>
                             </div>
                         </div>
@@ -342,10 +342,10 @@
                             </div>
                             <div class="featured-content">
                                 <div class="featured-title">
-                                    <h5>Tajriba</h5>
+                                    <h5>@lang('main.homepage_experience_1')</h5>
                                 </div>
                                 <div class="featured-desc">
-                                    <p>Markazimiz 2008 yildan buyon o'z faoliyatini yuritib kelmoqda</p>
+                                    <p>@lang('main.homepage_black_text2')</p>
                                 </div>
                             </div>
                         </div>
@@ -361,10 +361,10 @@
                             </div>
                             <div class="featured-content">
                                 <div class="featured-title">
-                                    <h5>Keng tanlov</h5>
+                                    <h5>@lang('main.homepage_choice')</h5>
                                 </div>
                                 <div class="featured-desc">
-                                    <p>Markazimizdan 170 dan ortiq yo'nalishlar mavjud</p>
+                                    <p>@lang('main.homepage_black_text3')</p>
                                 </div>
                             </div>
                         </div>
@@ -380,10 +380,10 @@
                             </div>
                             <div class="featured-content">
                                 <div class="featured-title">
-                                    <h5>Hamkorlik</h5>
+                                    <h5>@lang('main.homepage_cooperation')</h5>
                                 </div>
                                 <div class="featured-desc">
-                                    <p>Markazimizning bir nechta yirik korxonalar bilan hamkorlik qiladi</p>
+                                    <p>@lang('main.homepage_black_text4')</p>
                                 </div>
                             </div>
                         </div>
@@ -399,10 +399,10 @@
                             </div>
                             <div class="featured-content">
                                 <div class="featured-title">
-                                    <h5>Sertifikat</h5>
+                                    <h5>@lang('main.homepage_certificate')</h5>
                                 </div>
                                 <div class="featured-desc">
-                                    <p>Markazimizda kasb mutaxassisi sifatidagi sertifikatlar beriladi</p>
+                                    <p>@lang('main.homepage_black_text5')</p>
                                 </div>
                             </div>
                         </div>
@@ -418,10 +418,10 @@
                             </div>
                             <div class="featured-content">
                                 <div class="featured-title">
-                                    <h5>Komfort</h5>
+                                    <h5>@lang('main.homepage_comfort')</h5>
                                 </div>
                                 <div class="featured-desc">
-                                    <p>Darslar shinam barcha zarur jixozlarga ega sinf xonalarida olib boriladi</p>
+                                    <p>@lang('main.homepage_black_text6')</p>
                                 </div>
                             </div>
                         </div>
@@ -442,8 +442,8 @@
                         <div class="pt-35 res-991-pr-0 pr-15 pb-25 pl-50 res-991-pl-35 ttm-bgcolor-white box-shadow mr-9">
                             <div class="row align-items-center">
                                 <div class="col-lg-8 col-md-6">
-                                    <h3 class="mb-18">Kelajagingizga befarq bo'lmang.</h3>
-                                    <p>Agar haligacha o'z yo'nalishingizni topa olmay yurgan bo'lsangiz bizning markaz sizga o'z xizmatlarini taklif qiladi. Siz o'zingiz xohlagan kasb egasi bo'lishingizda bizning professional o'qituvchilarimiz sizga o'z bilimlari va malakalarini berishadi</p>
+                                    <h3 class="mb-18">@lang('main.homepage_future')</h3>
+                                    <p>@lang('main.homepage_future_p')</p>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
                                     <!--featured-icon-box-->
@@ -456,7 +456,7 @@
                                                 <h5>Sanoat O'quv</h5>
                                             </div>
                                             <div class="featured-desc">
-                                                <p>Zamonaviy o'rgatish sistemasi</p>
+                                                <p>@lang('main.homepage_featured')</p>
                                             </div>
                                         </div>
                                     </div>
@@ -478,8 +478,8 @@
                         <!-- section title -->
                         <div class="section-title title-style-center_text">
                             <div class="title-header">
-                                <h5>Mutaxassisliklar</h5>
-                                <h2 class="title"><a href="{{route('web.courses.index')}}">Barcha yo'nalishlar bilan tanishish</a></h2>
+                                <h5>@lang('main.homepage_specialties')</h5>
+                                <h2 class="title"><a href="{{route('web.courses.index')}}">@lang('main.homepage_specialties_text')</a></h2>
                             </div>
                             <div class="heading-seperator"><span></span></div>
                         </div>
@@ -508,7 +508,7 @@
                                 <!-- section-title -->
                                 <div class="section-title">
                                     <div class="title-header pt-33 pl-35">
-                                        <h2 class="title">Ariza qoldiring</h2>
+                                        <h2 class="title">@lang('main.homepage_submit_application')</h2>
                                     </div>
                                     <div class="seperator-angle ttm-textcolor-darkgrey"></div>
                                 </div><!-- section-title end -->
@@ -535,8 +535,8 @@
                             <!-- section title -->
                             <div class="section-title pr-50 res-991-pr-0">
                                 <div class="title-header">
-                                    <h5>Tanlovda qiynalyapsizmi?</h5>
-                                    <h2 class="title">tanlovda yordamlashamiz</h2>
+                                    <h5>@lang('main.homepage_choose')</h5>
+                                    <h2 class="title">@lang('main.homepage_help')</h2>
                                 </div>
                                 <div class="heading-seperator"><span></span></div>
                             </div><!-- section title end -->
@@ -556,7 +556,7 @@
                                                 <span data-appear-animation="animateDigits" data-from="0" data-to="170" data-interval="5" data-before="" data-before-style="sup" data-after="" data-after-style="sub" class="numinate"></span>
                                                 <sub>+</sub>
                                             </h4>
-                                            <h3 class="ttm-fid-title">Yo'nalishlar</h3>
+                                            <h3 class="ttm-fid-title">@lang('main.homepage_directions')</h3>
                                         </div>
                                     </div><!-- ttm-fid end -->
                                 </div>
@@ -573,7 +573,7 @@
                                                         </span>
                                                 <sub>+</sub>
                                             </h4>
-                                            <h3 class="ttm-fid-title">Mutahassisslar</h3>
+                                            <h3 class="ttm-fid-title">@lang('main.homepage_specialists_1')</h3>
                                         </div>
                                     </div><!-- ttm-fid end -->
                                 </div>
@@ -589,7 +589,7 @@
                                                         </span>
                                                 <sub>+</sub>
                                             </h4>
-                                            <h3 class="ttm-fid-title">Bitiruvchilar</h3>
+                                            <h3 class="ttm-fid-title">@lang('main.homepage_graduates')</h3>
                                         </div>
                                     </div><!-- ttm-fid end -->
                                 </div>
@@ -610,8 +610,8 @@
                         <!-- section title -->
                         <div class="section-title title-style-center_text">
                             <div class="title-header">
-                                <h5>Yangiliklar</h5>
-                                <h2 class="title"><a href="{{route('web.blog.index')}}">So'ngi yangiliklar</a></h2>
+                                <h5>@lang('main.nav_news')</h5>
+                                <h2 class="title"><a href="{{route('web.blog.index')}}">@lang('main.homepage_latest_news')</a></h2>
                             </div>
                             <div class="heading-seperator"><span></span></div>
                         </div>
